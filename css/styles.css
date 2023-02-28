@@ -86,7 +86,7 @@ img {
 
 .container {
   max-width: 1158px;  
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -354,7 +354,7 @@ img {
     padding: 0;
 }
 .team-item {
-    width:calc((100%-72)/4);
+    width: calc((100% - 72) / 4);
     text-align: center;
     min-width: 264px;
     
@@ -392,14 +392,11 @@ img {
  
 
 .footer-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 100px;
-    /* padding: 100px 1002px 100px 156px; */
-   
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px;
 }
 
 
@@ -447,20 +444,23 @@ img {
 }
 
 .filters-item:not(:last-child) {
-   margin-right: 24px;
+  margin-right: 24px;
 }
 
 .filters-btn {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--btn-text-color);
-    background: var(--filters-button-background);
-    border: 1px solid  var(--filters-button-background);
-    border-radius: 4px;
-    cursor: pointer;
+  border: 1px solid  var(--filters-button-background);
+  border-radius: 4px;
+
+  color: var(--btn-text-color);
+  background: var(--filters-button-background);
+    
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+    
+  cursor: pointer;
 }
 
 .filters-btn:hover,
@@ -473,16 +473,15 @@ img {
   margin-right: 0; 
   display: flex;
   flex-wrap: wrap;
-  margin-top: 72px;    
-  justify-content: center;
+  margin-top: 72px;  
+  row-gap: 48px;  
+  column-gap: 24px;
+  
 }
 
 .works-item {
   display: flex;
-  flex-basis: calc((100%-48)/3);
-  /* width: 33.333%; */
-  justify-content: center;
-  align-items: center;
+  flex-basis: calc((100% - 48) / 3);
 }
 
 .works-link {    
@@ -497,16 +496,20 @@ img {
 
 }
 .works-subtitle {
+  color: var(--main-title-subtitle-color);
+  
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--main-title-subtitle-color);
+  
 }
 .works-text {
+  color: var(--main-text-color);
+  
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  
 }

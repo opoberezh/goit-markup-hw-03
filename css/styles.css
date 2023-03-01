@@ -95,7 +95,7 @@ img {
 
 /* ----------header--------- */
 .header {
- 
+ border-bottom: 1px solid var(--filters-button-background);
 }
 
 
@@ -375,9 +375,15 @@ img {
     
   background: var(--team-item-background-color);
 }
+
+.team-text{
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+}
+
 .team-subtitle {
-  margin-top: 30px;
-  
+   
   color: var(--main-title-subtitle-color);
   
   font-weight: 500;
@@ -389,8 +395,7 @@ img {
 
 .team-description {
   margin-top: 8px;
-  margin-bottom: 30px;
- 
+   
   color: var(--main-text-color);
   
   font-weight: 400;
@@ -511,6 +516,7 @@ img {
   flex-direction: column;
   padding: 32px 0 32px 16px;
   border: 1px solid var(--footer-text-color);
+  border-top: none;
 
 }
 .works-subtitle {
